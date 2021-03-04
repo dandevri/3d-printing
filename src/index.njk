@@ -2,5 +2,32 @@
 layout: base
 ---
 
-<h1 class="u-mb1">Updates</h1>
-{% include "postlist.njk" %}
+<section>
+  <h3 class="u-mb1">Basics</h3>
+
+  {% for post in collections.posts | reverse %}
+  {% if post.data.tag === 'basics' %}
+  {% include "postlist.njk" %}
+  {% endif %}
+  {% endfor %}
+</section>
+
+<section>
+  <h3 class="u-mb1">Maintenance</h3>
+
+  {% for post in collections.posts | reverse %}
+  {% if post.data.tag === 'maintenance' %}
+  {% include "postlist.njk" %}
+  {% endif %}
+  {% endfor %}
+</section>
+
+<section>
+  <h3 class="u-mb1">Parts & modifications</h3>
+
+  {% for post in collections.posts | reverse %}
+  {% if post.data.tag === 'parts' %}
+  {% include "postlist.njk" %}
+  {% endif %}
+  {% endfor %}
+</section>

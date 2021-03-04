@@ -1,6 +1,7 @@
 ---
 title: Crisis information example post
 date: 2020-03-22T14:00
+tag: basics
 ---
 
 This is an example of how to publish critical information as posts on this website.
